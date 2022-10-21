@@ -7,7 +7,8 @@
       <% end %>
     </ul>
 
-  <p>What is the longest word you can find</p>
+  <p class="form-prefix">What is the longest word you can find</p>
+
   <form action="/score" method="post" data-turbo="false">
     <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
     <%= hidden_field_tag :letters, @letters %>
